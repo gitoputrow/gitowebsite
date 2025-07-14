@@ -42,15 +42,29 @@ export default function Navbar() {
             <div className="logo"></div>
             <div className="logotext">Personal Site</div>
           </div>
+          <div
+            style={{
+              marginBottom: "1.7rem",
+              height: "1px",
+              width: "100%",
+              background: "var(--color-secondary)",
+            }}
+          ></div>
           <ul>
-            <li className={pathname === "/" ? "active" : ""}>
-              <Link href="/greeting" onClick={() => setIsOpen(false)}>Greeting</Link>
+            <li className={pathname === "/greeting" ? "active" : ""}>
+              <Link href="/greeting" onClick={() => setIsOpen(false)}>
+                Greeting
+              </Link>
             </li>
             <li className={pathname === "/my-craft" ? "active" : ""}>
-              <Link href="/my-craft" onClick={() => setIsOpen(false)}>My Craft</Link>
+              <Link href="/my-craft" onClick={() => setIsOpen(false)}>
+                My Craft
+              </Link>
             </li>
             <li className={pathname === "/contact-me" ? "active" : ""}>
-              <Link href="/contact-me" onClick={() => setIsOpen(false)}>Contact Me</Link>
+              <Link href="/contact-me" onClick={() => setIsOpen(false)}>
+                Contact Me
+              </Link>
             </li>
           </ul>
         </div>
