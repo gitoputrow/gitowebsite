@@ -46,14 +46,14 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 680px) {
 
   .intro {
     flex-direction: column;
   }
 
   .photosection {
-    width: 80%;
+    width:60%;
     align-self: center;
   }
 
@@ -63,4 +63,12 @@
     margin-top: 16px;
     margin-bottom: 16px;
   }
+}
+
+@media only screen and (max-width: 425px) {
+
+  .photosection {
+    width: 80%;
+  }
+
 }

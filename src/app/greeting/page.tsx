@@ -20,7 +20,7 @@ export default function GreetingPage() {
             <div className="spacerphotoandtext"></div>
             <AboutMeWidget
               name="Gito Putro Wardana"
-              subtitle="Fast Intro About Me"
+              subtitle="Quick Intro About Me"
               intro="I'm a video maker who's deeply interested in the art of visual
         storytelling, and I channel that same creative energy into building
         engaging mobile applications with Flutter, bridging the worlds of visual

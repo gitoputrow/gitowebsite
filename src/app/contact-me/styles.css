@@ -5,8 +5,8 @@
     align-content: center;
     min-height: 100vh; 
     min-width: 100%;
-    padding: 0rem 5rem;
-    padding-bottom: 24px;
+    padding: 5rem 3rem;
+    /* padding-bottom: 24px; */
 }
 
 .contact-me-section{
@@ -51,6 +51,18 @@
     flex-direction: column;
 }
 
+@media only screen and (max-height: 572px) {
+
+.contact-me{
+    justify-content: start;
+    align-content: start;
+    min-height: 100vh; 
+    min-width: 100%;
+    padding: 5rem 3rem;
+}
+
+}
+
 @media only screen and (max-width: 1024px) {
 
   .textual-content h1{
@@ -73,7 +85,9 @@
 }
 }
 
-@media only screen and (max-width: 425px) {
+
+
+@media only screen and (max-width: 680px) {
 
     .contact-me-section{
     display: flex;

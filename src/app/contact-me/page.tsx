@@ -22,7 +22,7 @@ export default function ContactMe() {
           <SocialMediaCardWidget
             scr="whatsapp"
             name="Whatsapp"
-            username="+628112518692"
+            username="+62 8112518692"
             url="https://wa.me/628112518692"
           />
           <div style={{ marginBottom: "24px" }}></div>
