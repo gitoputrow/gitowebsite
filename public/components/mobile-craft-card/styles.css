@@ -1,0 +1,91 @@
+.mobile-craft-card{
+    border-radius: 16px;
+    display:flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--color-card);
+    width: 33%;
+    border: 0px solid transparent;
+}
+
+.mobile-craft-card.loading:hover {
+  background-color: unset;
+  border: 0px solid transparent;
+  cursor: default;
+}
+
+.mobile-craft-card:hover {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    /* border: 8px solid var(--color-secondary); */
+} 
+
+.mobile-craft-card:hover .mobile-craft-card-info-text{
+    color: var(--color-primary);
+} 
+
+.mobile-craft-card-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 7/4; /* atau 280/160 */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.mobile-craft-card-info-img-wrapper{
+    position: relative;
+    width: 100px;
+    /* height: 100px; */
+    aspect-ratio: 1/1; 
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.mobile-craft-card-info img{
+    border-radius: 8px !important;
+}
+
+.mobile-craft-card-info-text {
+    color: var(--color-secondary);
+    width: 70%;
+    /* gap: 28px; */
+}
+
+.mobile-craft-card-info-text h1 {
+    font-size: clamp(16px, 1.5vw, 20px);
+    font-weight: 600;
+}
+
+.mobile-craft-card-info-text p {
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 400;
+}
+
+.mobile-craft-card-info{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0px 0px 0px;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+}
+
+@media only screen and (max-width: 1024px) {
+    .mobile-craft-card{
+        width: 31.5%;
+    }
+  
+}
+
+@media only screen and (max-width: 860px) {
+    .mobile-craft-card{
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .mobile-craft-card{
+        width: 100%;
+    }
+}

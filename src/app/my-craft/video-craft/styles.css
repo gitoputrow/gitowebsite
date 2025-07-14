@@ -1,0 +1,54 @@
+.main-video-craft {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-craft-category{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0px 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.video-craft-category::-webkit-scrollbar {
+  display: none;
+}
+
+.video-craft-category > * {
+  flex: 0 0 auto;
+}
+
+.video-craft-appbar {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    color: var(--color-secondary);
+}
+
+.full-split-circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        var(--color-secondary) 50%,
+        var(--color-primary) 50%
+    );
+    border: 2px solid var(--color-secondary);
+    box-sizing: border-box;
+}
+
+.video-craft-content {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 0px 16px;
+}

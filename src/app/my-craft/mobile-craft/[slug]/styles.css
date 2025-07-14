@@ -1,0 +1,286 @@
+.mobile-craft-detail{
+    width: 100%;
+}
+
+.mobile-craft-detail-landing-page-img{
+    position: relative;
+    aspect-ratio: 12/13;
+    width: 34rem;
+    /* height: 34rem; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-craft-detail-header{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000
+}
+
+.mobile-craft-detail-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8rem; /* atur tinggi gradasi sesuai kebutuhan */
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-primary)
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.mobile-craft-detail-header-img{
+    position: relative;
+    width: 20rem !important;
+    height: 20rem !important;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-craft-detail-landing-page-content{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* background-color: #000000; */
+}
+
+.mobile-craft-detail-landing-page-content h2{
+    font-size: 62px;
+    font-weight: 800;
+    color:rgb(255, 255, 255);
+}
+
+.mobile-craft-detail-landing-page-content h1{
+    font-size: 18px;
+    font-weight: 200;
+    color:rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.mobile-craft-detail-landing-page-content p{
+    font-size: 14px;
+    font-weight: 200;
+    color:rgb(175, 175, 175);
+    text-align: justify;
+}
+
+.mobile-craft-detail-landing-page{
+    display: flex;
+    width: 100%;
+    gap: 32px;
+    padding: 24px 52px;
+    height: 100vh;
+    flex-direction: row;
+    background-color: var(--color-primary);
+}
+
+.button-container{
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+.button-apk{
+    width: 10rem;
+    padding: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.button-source{
+    width: 10rem;
+    padding: 16px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-secondary);
+    border: 3px solid var(--color-secondary);
+    border-radius: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .mobile-craft-detail-landing-page-img{
+        width: 26rem;
+    }
+
+    .mobile-craft-detail-landing-page-content h2{
+        font-size: 48px;
+    }
+
+    .mobile-craft-detail-landing-page-content h1{
+        font-size: 14px;
+    }
+
+    .mobile-craft-detail-landing-page-content p{
+        font-size: 12px;
+    }
+
+    .button-container{
+        font-size: 15
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .mobile-craft-detail-header-img{
+    width: 16rem !important;
+    height: 16rem !important;
+}
+
+    .mobile-craft-detail-landing-page-img{
+        width: 20rem;
+    }
+
+    .mobile-craft-detail-landing-page-content h2{
+        font-size: 40px;
+    }
+
+    .mobile-craft-detail-landing-page-content h1{
+        font-size: 12px;
+    }
+
+    .mobile-craft-detail-landing-page-content p{
+        font-size: 10px;
+    }
+    .button-container{
+        font-size: 12
+    }
+    .button-apk{
+    width: 8rem;
+    padding: 12px;
+}
+
+.button-source{
+    width: 8rem;
+    padding: 12px;
+}
+}
+
+@media only screen and (max-width: 425px) {
+
+    .mobile-craft-detail-header-img{
+    width: 12rem !important;
+    height: 12rem !important;
+}
+
+    .mobile-craft-detail-landing-page-img{
+        width: 80%;
+    }
+
+    .mobile-craft-detail-landing-page-content h2{
+        font-size: 32px;
+        text-align: start;
+    }
+
+    .mobile-craft-detail-landing-page-content h1{
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .mobile-craft-detail-landing-page-content p{
+        font-size: 8px;
+        text-align: start;
+    }
+    .button-container{
+        font-size: 10
+    }
+    .button-apk{
+    width: 7rem;
+    padding: 12px;
+}
+
+.button-source{
+    width: 7rem;
+    padding: 12px;
+}
+
+.mobile-craft-detail-landing-page-img {
+    order: 1;
+  }
+  .mobile-craft-detail-landing-page-content {
+    order: 2;
+    width: 100%;
+    align-items: center;
+  }
+
+.mobile-craft-detail-landing-page{
+    display: flex;
+    padding: 24px 52px;
+    flex-direction: column;
+    height: auto;
+}
+}
+
+@media only screen and (max-width: 375px) {
+
+    .mobile-craft-detail-header-img{
+    width: 10rem !important;
+    height: 10rem !important;
+}
+
+    .mobile-craft-detail-landing-page-img{
+        width: 85%;
+    }
+
+    .mobile-craft-detail-landing-page-content h2{
+        font-size: 30px;
+        text-align: start;
+    }
+
+    .mobile-craft-detail-landing-page-content h1{
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .mobile-craft-detail-landing-page-content p{
+        font-size: 8px;
+        text-align: start;
+    }
+    .button-container{
+        font-size: 10
+    }
+    .button-apk{
+    width: 7rem;
+    padding: 12px;
+}
+
+.button-source{
+    width: 7rem;
+    padding: 12px;
+}
+
+.mobile-craft-detail-landing-page-img {
+    order: 1;
+  }
+  .mobile-craft-detail-landing-page-content {
+    order: 2;
+    width: 100%;
+    align-items: center;
+  }
+
+.mobile-craft-detail-landing-page{
+    display: flex;
+    padding: 24px 52px;
+    flex-direction: column;
+    height: auto;
+}
+}
+

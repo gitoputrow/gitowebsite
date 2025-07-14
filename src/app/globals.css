@@ -1,6 +1,10 @@
 :root {
-  --background: #ffffff;
+  --background:rgb(34, 34, 34);
   --foreground: #171717;
+  --color-primary:rgb(34, 34, 34);
+  --color-card: rgb(39, 39, 39);
+  --color-secondary: rgb(255, 248, 212);
+  --font-family-base: var(--font-jakarta);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,19 +14,37 @@
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background:rgb(56, 56, 56)
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(90deg, rgb(64, 64, 64) 0%,rgb(78, 78, 78) 50%, rgb(91, 91, 91) 100%);
+  animation: shimmer 1.2s infinite;
+  z-index: 1;
 }
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+html, body {
+  font-family: var(--font-family-base), sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -35,8 +57,17 @@ a {
   text-decoration: none;
 }
 
+.spacerphotoandtext {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+
+

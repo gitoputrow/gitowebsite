@@ -1,0 +1,53 @@
+.video-craft-card-widget{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 16px;
+    width: 32%;
+    background-color: var(--color-card);
+    /* maintain aspect ratio */
+}
+
+.video-craft-card-widget:hover .video-craft-card-title{
+    color: var(--color-primary);
+}
+
+.video-craft-card-widget:hover {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.video-craft-card-thumbnail{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.video-craft-card-title{
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.video-craft-card-duration{
+    font-size: clamp(10px, 1.5vw, 14px);
+    font-weight: 400;
+    color:rgb(101, 101, 101);
+}
+
+@media only screen and (max-width: 768px) {
+    .video-craft-card-widget {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .video-craft-card-widget {
+        width: 100%;
+    }
+}
+
+
+

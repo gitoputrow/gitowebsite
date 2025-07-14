@@ -1,0 +1,85 @@
+.main-craft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0rem 2rem;
+    /* padding-bottom: 24px; */
+}
+
+
+.my-craft-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.craft-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-secondary)
+  /* letter-spacing: 0.5px; */
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-secondary);
+  border-radius: 999px;
+}
+
+.mobile-divider{
+  margin: 1rem 0rem
+}
+
+@media only screen and (max-width: 1024px) {
+.main-craft {
+    padding: 0rem 2rem
+}
+}
+
+@media only screen and (max-width: 425px) {
+.main-craft {
+    padding: 4.3rem 2rem 2rem;
+    justify-content: start;
+}
+
+.title {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.my-craft-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.craft-header {
+  margin-bottom: 32px;
+}
+}
+
+@media only screen and (max-width: 375px) {
+.title {
+  font-size: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 320px) {
+.title {
+  font-size: 1.3rem;
+}
+
+.craft-header {
+  margin-bottom: 24px;
+}
+}

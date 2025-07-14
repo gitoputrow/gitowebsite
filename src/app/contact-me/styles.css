@@ -1,0 +1,136 @@
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh; 
+    min-width: 100%;
+    padding: 0rem 5rem;
+    padding-bottom: 24px;
+}
+
+.contact-me-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.textual-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textual-content-mobile{
+    display: none;
+}
+
+.textual-content h1{
+    font-size: 52px;
+    font-weight: 800;
+    text-align: right;
+    color: var(--color-secondary);
+}
+
+.textual-content-mobile h1{
+    display: none;
+}
+
+.textual-content-mobile p{
+    display: none;
+}
+
+.textual-content p{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: right;
+    color: var(--color-secondary);
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .textual-content h1{
+    font-size: 48px;
+}
+
+.textual-content p{
+    font-size: 24px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+  .textual-content h1{
+    font-size: 42px;
+}
+
+.textual-content p{
+    font-size: 22px;
+}
+}
+
+@media only screen and (max-width: 425px) {
+
+    .contact-me-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me{
+    justify-content: start;
+    align-content: start;
+    min-height: 100vh; 
+    min-width: 100%;
+    padding: 5rem 3rem;
+}
+
+  .textual-content {
+    display: none;
+  }
+
+  .textual-content-mobile{
+    display: block;
+  }
+
+  .textual-content-mobile h1{
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: left;
+    color: var(--color-secondary);
+  }
+
+  .textual-content-mobile p{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--color-secondary);
+}
+}
+
+@media only screen and (max-width: 375px) {
+
+  .textual-content-mobile h1{
+    font-size: 32px;
+  }
+
+  .textual-content-mobile p{
+    font-size: 18px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+  .textual-content-mobile h1{
+    font-size: 28px;
+  }
+
+  .textual-content-mobile p{
+    font-size: 16px;
+}
+}

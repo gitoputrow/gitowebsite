@@ -1,0 +1,18 @@
+.video-craft-detail-page-main{
+    display: flex;
+    flex-direction: column;
+    /* padding: 24px; */
+}
+
+.video-craft-detail-page-main h1{
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.video-craft-detail-page-main p{
+    font-size: clamp(12px, 3vw, 18px);
+    font-weight: 200;
+    text-align: justify;
+    color:rgb(205, 205, 205);
+}
