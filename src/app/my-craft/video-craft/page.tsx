@@ -31,7 +31,7 @@ export default function VideoCraftPage() {
     const q = query(
       collection(db, "videoCraft"),
       where("category_ids", "array-contains", categoryId),
-      orderBy("date", "asc")
+      orderBy("date", "desc")
     );
     const querySnapshot = await getDocs(q);
     const result: VideoCraft[] = querySnapshot.docs.map((doc) => ({
