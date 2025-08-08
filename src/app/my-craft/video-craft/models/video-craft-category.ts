@@ -1,4 +1,4 @@
-export interface VideoCraftCategory {
-    id: string;
-    name: string;
+export interface CraftCategory {
+  id: string;
+  name: string;
 }

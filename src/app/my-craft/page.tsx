@@ -10,10 +10,10 @@ export default function MyCraft() {
       </div>
       <div className="my-craft-section">
         <MyCraftCardWidget
-          page_name="mobile-craft"
-          scr="mobile-craft"
-          title="Innovative Mobile App Showcase"
-          desc="Explore a collection of mobile apps designed with intuitive flows, modern interfaces, and powerful features. each project built to solve real user needs, consistent performance across platforms."
+          page_name="app-craft"
+          scr="app-craft"
+          title="Innovative App Showcase"
+          desc="Explore a collection of mobile and web apps designed with intuitive flows, modern interfaces, and powerful features. each project built to solve real user needs with consistent performance across platforms."
         />
         <div className="mobile-divider"></div>
         <MyCraftCardWidget

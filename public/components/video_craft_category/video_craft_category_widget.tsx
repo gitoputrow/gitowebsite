@@ -1,14 +1,14 @@
-import { VideoCraftCategory } from "@/app/my-craft/video-craft/models/video-craft-category";
+import { CraftCategory } from "@/app/my-craft/video-craft/models/video-craft-category";
 import "./video_craft_category_style.css";
 
-export default function VideoCraftCategoryWidget({
+export default function CraftCategoryWidget({
   data,
   isSelected = false,
   onSelect = () => {},
 }: {
-  data?: VideoCraftCategory;
+  data?: CraftCategory;
   isSelected?: boolean;
-  onSelect?: (category: VideoCraftCategory) => void;
+  onSelect?: (category: CraftCategory) => void;
 }) {
   const isLoading = !data?.name || !data?.id;
 

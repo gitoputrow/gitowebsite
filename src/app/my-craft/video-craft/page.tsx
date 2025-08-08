@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import VideoCraftCategoryWidget from "../../../../public/components/video_craft_category/video_craft_category_widget";
+import CraftCategoryWidget from "../../../../public/components/video_craft_category/video_craft_category_widget";
 import "./styles.css";
-import { VideoCraftCategory } from "./models/video-craft-category";
+import { CraftCategory } from "./models/video-craft-category";
 import {
   getFirestore,
   collection,
@@ -17,12 +17,12 @@ import VideoCraftCardWidget from "../../../../public/components/video_craft_card
 import { VideoCraft } from "./models/video-craft";
 
 export default function VideoCraftPage() {
-  const [categories, setCategories] = useState<VideoCraftCategory[]>([]);
+  const [categories, setCategories] = useState<CraftCategory[]>([]);
 
   const [videos, setVideos] = useState<VideoCraft[]>([]);
 
-  const [selectedCategory, setSelectedCategory] = useState<VideoCraftCategory>(
-    {} as VideoCraftCategory
+  const [selectedCategory, setSelectedCategory] = useState<CraftCategory>(
+    {} as CraftCategory
   );
 
   const fetchVideo = async (categoryId: string) => {
@@ -49,10 +49,10 @@ export default function VideoCraftPage() {
         orderBy("order", "asc")
       );
       const querySnapshot = await getDocs(q);
-      const result: VideoCraftCategory[] = querySnapshot.docs.map((doc) => ({
+      const result: CraftCategory[] = querySnapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
-      })) as VideoCraftCategory[];
+      })) as CraftCategory[];
       setCategories(result);
       setSelectedCategory(result[0]);
       fetchVideo(result[0].id);
@@ -69,9 +69,9 @@ export default function VideoCraftPage() {
       <div style={{ marginBottom: "12px" }}></div>
       <div className="video-craft-category">
         {categories.length === 0
-          ? [1, 2, 3].map((i) => <VideoCraftCategoryWidget key={i} />)
+          ? [1, 2, 3].map((i) => <CraftCategoryWidget key={i} />)
           : categories.map((data) => (
-              <VideoCraftCategoryWidget
+              <CraftCategoryWidget
                 key={data.id}
                 data={data}
                 isSelected={selectedCategory === data}

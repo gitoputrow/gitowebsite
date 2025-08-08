@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import "./styles.css";
 import "@/app/globals.css";
-import { MobileCraft } from "@/app/my-craft/mobile-craft/models/mobile-craft";
+import { MobileCraft } from "@/app/my-craft/app-craft/models/mobile-craft";
 
 export default function MobileCraftCard({ data }: { data?: MobileCraft }) {
   const isLoading =
