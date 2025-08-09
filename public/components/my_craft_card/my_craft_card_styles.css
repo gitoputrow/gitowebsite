@@ -23,13 +23,13 @@
 .text-craft-styles h1{
     color: var(--color-secondary);
     text-align: center;
-    font-size:clamp(16px, 2.7vw, 32px);
+    font-size:clamp(18px, 2.7vw, 32px);
 }
 
 .text-craft-styles p{
     color: var(--color-secondary);
     text-align: justify;
-    font-size:clamp(10px, 2.7vw, 16px);
+    font-size:clamp(12px, 2.7vw, 16px);
 }
 
 .logo-craft{

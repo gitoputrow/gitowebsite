@@ -1,17 +1,17 @@
-.navbar{
-    position: absolute;
+.navbar {
+  position: fixed; /* dari absolute → fixed */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    background-color:var(--color-primary);
-    padding: 1rem 2rem 0.8rem;
-    height: auto;
-    color: var(--color-secondary);
+  z-index: 100; /* naikin biar di atas konten lain */
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  padding: 1rem 2rem 0.8rem;
+  height: auto;
+  color: var(--color-secondary);
 }
+
 
 .logowidget{
     display: flex;

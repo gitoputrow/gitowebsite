@@ -74,13 +74,6 @@
     font-size: 28px;
   }
 
-  .sub-title{
-    font-size: 16px;
-  }
-
-  .intro-text{
-    font-size: 12px;
-  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -91,30 +84,8 @@
   }
 
   .name{
-    font-size: 24px;
+    font-size: 22px;
   }
 
-  .sub-title{
-    font-size: 14px;
-  }
-
-  .intro-text{
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-
-  .name{
-    font-size: 20px;
-  }
-
-  .sub-title{
-    font-size: 12px;
-  }
-
-  .intro-text{
-    font-size: 10px;
-  }
 }
 
