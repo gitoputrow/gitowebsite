@@ -1,5 +1,6 @@
 .mobile-craft-detail{
     width: 100%;
+    padding: 8px 4px;
 }
 
 .mobile-craft-detail-landing-page-img{
@@ -17,6 +18,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     background-color: #000
@@ -81,7 +83,7 @@
     display: flex;
     width: 100%;
     gap: 32px;
-    padding: 24px 52px;
+    padding: 0px 32px;
     height: 100vh;
     flex-direction: row;
     background-color: var(--color-primary);
@@ -90,23 +92,25 @@
 .button-container{
     display: flex;
     gap: 24px;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
 }
 
 .button-apk{
-    width: 10rem;
+    width: 12rem;
     padding: 16px;
     font-weight: 600;
     text-align: center;
     color: var(--color-primary);
     background-color: var(--color-secondary);
+    border: 3px solid var(--color-secondary);
     border-radius: 24px;
     cursor: pointer;
 }
 
 .button-source{
-    width: 10rem;
+    width: 12rem;
     padding: 16px;
     font-weight: 600;
     text-align: center;
@@ -223,7 +227,7 @@
 
 .mobile-craft-detail-landing-page{
     display: flex;
-    padding: 24px 52px;
+    padding: 24px 36px;
     flex-direction: column;
     height: auto;
 }
@@ -259,12 +263,12 @@
     }
     .button-apk{
     width: 7rem;
-    padding: 12px;
+    padding: 8px;
 }
 
 .button-source{
     width: 7rem;
-    padding: 12px;
+    padding: 8px;
 }
 
 .mobile-craft-detail-landing-page-img {
@@ -276,11 +280,5 @@
     align-items: center;
   }
 
-.mobile-craft-detail-landing-page{
-    display: flex;
-    padding: 24px 52px;
-    flex-direction: column;
-    height: auto;
-}
 }
 

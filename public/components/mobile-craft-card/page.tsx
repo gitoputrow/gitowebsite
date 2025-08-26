@@ -17,7 +17,7 @@ export default function MobileCraftCard({ data }: { data?: MobileCraft }) {
       className={`mobile-craft-card${isLoading ? " loading" : ""}`}
       onClick={() => {
         if (!isLoading && data.id) {
-          router.push(`mobile-craft/${data.id}`);
+          router.push(`app-craft/${data.id}`);
         }
       }}
     >
