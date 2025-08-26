@@ -83,7 +83,7 @@ export default function VideoCraftPage() {
               />
             ))}
       </div>
-      <div style={{ marginBottom: "12px" }}></div>
+      <div style={{ marginBottom: "20px" }}></div>
       <div className="video-craft-content">
         {videos.length === 0
           ? [1, 2, 3].map((i) => <VideoCraftCardWidget key={i} />)
