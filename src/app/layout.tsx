@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className={`${jakarta.variable}`}>
       
       <body >
-        {!hideNavbar && <Navbar />}
+        {/* {!hideNavbar && <Navbar />} */}
         {children}
       </body>
     </html>

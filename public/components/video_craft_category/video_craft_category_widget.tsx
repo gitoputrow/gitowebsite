@@ -1,5 +1,4 @@
 import { CraftCategory } from "@/app/my-craft/video-craft/models/video-craft-category";
-import "./video_craft_category_style.css";
 
 export default function CraftCategoryWidget({
   data,
@@ -14,20 +13,16 @@ export default function CraftCategoryWidget({
 
   return isLoading ? (
     <div
-      className="shimmer"
-      style={{
-        borderRadius: 28,
-        padding: "12px 16px",
-        color: "transparent",
-        fontSize: 14,
-      }}
+      className="shimmer border border-transparent px-4 py-2.5 text-sm text-transparent"
     >
       Loading
     </div>
   ) : (
     <div
-      className={`video-craft-category-widget-main${
-        isSelected ? " selected" : ""
+      className={`shrink-0 snap-start whitespace-nowrap border px-4 py-2.5 text-sm font-semibold transition-colors duration-300 hover:cursor-pointer sm:px-5 ${
+        isSelected
+          ? "border-[var(--color-secondary)] bg-[var(--color-secondary)] text-[var(--color-primary)]"
+          : "border-[rgba(255,248,212,0.22)] text-[rgba(255,248,212,0.68)] hover:border-[rgba(255,248,212,0.5)] hover:text-[var(--color-secondary)]"
       }`}
       onClick={() => onSelect(data)}
     >
